@@ -1,0 +1,40 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/5f81ef9c36d5e724d4d1b714
+
+###
+
+POST http://localhost:3000/subscribers HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Johnn",
+    "canal": "What's Up Dog"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/5f81f3c3714ece6c509ef2b3
+
+
+###
+
+PATCH http://localhost:3000/subscribers/5f81f3b5714ece6c509ef2b1
+content-type: application/json
+
+{
+    "name": "John Wick",
+    "canal": "What's Up Dog"
+}
+
+### 
+
+PATCH http://localhost:3000/subscribers/5f81f3cd714ece6c509ef2b4
+content-type: application/json
+
+{
+    "name": "Jonas Brother",
+    "canal": "S'All Good Man"
+}
