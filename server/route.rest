@@ -1,40 +1,40 @@
-GET http://localhost:3000/subscribers
+GET http://localhost:3000/human
 
 ###
 
-GET http://localhost:3000/subscribers/5f81ef9c36d5e724d4d1b714
+GET http://localhost:3000/api/human/5f833a4e71dc46386c274929
 
 ###
 
-POST http://localhost:3000/subscribers HTTP/1.1
+POST http://localhost:3000/api/human HTTP/1.1
 content-type: application/json
 
 {
     "name": "Johnn",
-    "canal": "What's Up Dog"
+    "document": "123.456.789-22"
 }
 
 ###
 
-DELETE http://localhost:3000/subscribers/5f81f3c3714ece6c509ef2b3
+DELETE http://localhost:3000/api/human/5f81f3c3714ece6c509ef2b3
 
 
 ###
 
-PATCH http://localhost:3000/subscribers/5f81f3b5714ece6c509ef2b1
+PATCH http://localhost:3000/api/human/5f833a4e71dc46386c274929
 content-type: application/json
 
 {
     "name": "John Wick",
-    "canal": "What's Up Dog"
+    "document": "123.456.789-22"
 }
 
 ### 
 
-PATCH http://localhost:3000/subscribers/5f81f3cd714ece6c509ef2b4
+PATCH http://localhost:3000/api/human/5f833a4e71dc46386c274929
 content-type: application/json
 
 {
     "name": "Jonas Brother",
-    "canal": "S'All Good Man"
+    "document": "123.456.789-21"
 }
